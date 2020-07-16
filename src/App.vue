@@ -33,12 +33,14 @@
 
 <script>
 
+import { api_key } from './config/helper';
+
 export default {
   name: 'App',
   data() {
     return {
-      api_key: '3e4848da81442c631593c87f08bfe630',
-      url_base: "http://api.openweathermap.org/data/2.5/",
+      api_key: api_key,
+      url_base: "https://api.openweathermap.org/data/2.5/",
       query: '',
       weather: {}
     }
